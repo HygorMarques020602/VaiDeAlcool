@@ -1,0 +1,77 @@
+@font-face {
+     font-family: helveticaneue;
+     src: url('HelveticaNeueLTStd-UltLt.otf');
+}
+
+html { font-size: calc(1em + 1vw); }
+
+body{
+     font-family: "Arial";
+     background-color: rgb(250, 66, 90);
+     color: white;
+}
+
+.formulario{
+     padding: 5vh 15vw;
+     line-height: 5vh;
+}
+.formulario form{
+     flex-wrap: wrap;
+}
+.formulario h1{
+     margin-top: 10vh;
+     font-size: 2em;
+     text-align: center;
+     padding-bottom: 5vh;
+}
+.formulario input{
+     width: 70vw;
+     background: transparent;
+     border: none;
+     border-bottom: solid 1px;
+     margin-bottom: 2vh;
+     color: white;
+     height: 5vh;
+     font-size: 1em;
+}
+input:focus{
+     outline: none;
+}
+select:focus{
+     outline: none;
+}
+.formulario label{
+     padding-right: 10vw;
+}
+.peso{
+     margin-bottom: 4vh;
+}
+.formulario select{
+     background:  rgb(250, 66, 90);
+     width: 41.5vw;
+     color: white;
+     border: none;
+     border-bottom: solid 1px;
+     margin-bottom: 10vh;
+}
+.formulario button{
+     background: transparent;
+     border: solid 1px;
+     color: white;
+     font-size: 1em;
+     padding: 5vh 10vw;
+     width: 50vw;
+     margin: 0 auto;
+     display: block;
+     box-sizing: border-box;
+}
+.formulario div{
+     display:none;
+     border: solid 1px white;
+     text-align: center;
+     padding: 2vh 2vw;
+     margin: 20vh 10vw 0 10vw;
+}
+span{
+     font-size: 2em;
+}
