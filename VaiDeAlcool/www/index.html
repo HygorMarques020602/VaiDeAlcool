@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Na Medida</title>
+  <title>Vai de Álcool</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
@@ -11,67 +11,32 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <section class="formulario">
-    <form method="get" action="#">
-      <legend><h1>IMC</h1></legend>
-      <label for="altura">Altura</label>
-      <input type="number" name="altura" id="altura">
-      <label for="peso">Peso</label>
-      <input type="number" name="peso" id="peso" class="peso">
-      <label for="biotipo">Biotipo</label>
-      <select name="biotipo" id="biotipo">
-        <option value="1">Masculino</option>
-        <option value="2">Feminino</option>
-      </select>
+  <section class="principal">
+    <form action="#">
+      <legend class="titulo">VAI DE ÁLCOOL</legend>
+      <label for="gasolina" class="lab">Preço da Gasolina</label><br>
+      <input type="number" name="gasolina" id="gasolina"><br>
+      <label for="alcool">Preço do Álcool</label><br>
+      <input type="number" name="alcool" id="alcool"><br>
+      <label for="modelo">Modelo</label><br>
+      <select name="modelo" id="modelo">
+        <option value="1">PICANTO</option>
+        <option value="2">up! TSI</option>
+        <option value="3">MOBI</option>
+        <option value="4">NOVO UNO</option>
+        <option value="5">Twizy</option>
+      </select><br>
+      <label for="kmgasolina">Km Gasolina</label><br>
+      <input type="number" name="kmgasolina" id="kmgasolina"><br>
+      <label for="kmalcool">Km Álcool</label><br>
+      <input type="number" name="kmalcool" id="kmalcool">
+      <button>PROSSEGUIR</button>
     </form>
-    <button>VERIFICAR</button>
-    <div>
-      <h2>IMC</h2>
-      <span class="imcResult"></span>
-      <h2>PESO IDEAL</h2>
-      <span class="pesoIdeal"></span>
-    </div>
   </section>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/shuffle.js"></script>
 <script>
-  $(".formulario button").on("click", function(){
-    $(".formulario div").hide();
-
-    var altura = parseFloat($("input#altura").val());
-    var peso = parseFloat($("input#peso").val());
-    var biotipo = parseFloat($("select#biotipo").val());
-
-    var imc = peso/(altura*altura);
-
-    if(biotipo==1){
-      var pesoIdeal = 52+1.9*(altura*100-152.4)/2.54;
-    }else{
-      var pesoIdeal = 49+1.7*(altura*100-152.4)/2.54;
-    }
-
-    if(imc<=18.5){
-      $(".formulario button").text("ABAIXO DO PESO");
-      var bgcolor = "#ffa07a";
-    }else if(imc>18.5 && imc<=24.9){
-      $(".formulario button").text("NORMAL");
-      var bgcolor = "#d8bfd8";
-    }else if(imc=>25 && imc<29.9){
-      $(".formulario button").text("SOBREPESO");
-      var bgcolor = "#ffb6c1";  
-    }else{
-      $(".formulario button").text("OBESO");
-      var bgcolor = "#ff0000";
-    }
-
-    $(".formulario form").css("display", "none");
-    $(".formulario div").show();
-    $("span").css({color:bgcolor})
-    $(".imcResult").text(imc.toFixed(2));
-    $(".pesoIdeal").text(pesoIdeal.toFixed(2));
-    console.log(imc.toFixed(2), pesoIdeal.toFixed(2));
-    return false;
-  });
+  
 </script>
 </body>
 </html>
