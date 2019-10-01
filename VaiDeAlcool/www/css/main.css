@@ -6,33 +6,12 @@
 html { font-size: calc(1em + 1vw); }
 
 body{
-     font-family: "Arial";
-     background-color: rgb(250, 66, 90);
+     background: #512C96;
+     font-family: 'Impact';
      color: white;
 }
-
-.formulario{
-     padding: 5vh 15vw;
-     line-height: 5vh;
-}
-.formulario form{
-     flex-wrap: wrap;
-}
-.formulario h1{
-     margin-top: 10vh;
-     font-size: 2em;
-     text-align: center;
-     padding-bottom: 5vh;
-}
-.formulario input{
-     width: 70vw;
-     background: transparent;
-     border: none;
-     border-bottom: solid 1px;
-     margin-bottom: 2vh;
-     color: white;
-     height: 5vh;
-     font-size: 1em;
+form{
+     padding: 2vh 5.5vw;
 }
 input:focus{
      outline: none;
@@ -40,38 +19,48 @@ input:focus{
 select:focus{
      outline: none;
 }
-.formulario label{
-     padding-right: 10vw;
-}
-.peso{
-     margin-bottom: 4vh;
-}
-.formulario select{
-     background:  rgb(250, 66, 90);
-     width: 41.5vw;
-     color: white;
+
+input{
+     background: #3c6f9c;
      border: none;
-     border-bottom: solid 1px;
-     margin-bottom: 10vh;
-}
-.formulario button{
-     background: transparent;
-     border: solid 1px;
+     border-radius: 10px;
+     height: 7vh;
+     width: 85vw;
+     font-family: 'Impact';
      color: white;
      font-size: 1em;
-     padding: 5vh 10vw;
-     width: 50vw;
-     margin: 0 auto;
-     display: block;
-     box-sizing: border-box;
+     padding: 0 2vw;
+     margin-bottom: 2vh;
 }
-.formulario div{
-     display:none;
-     border: solid 1px white;
+select{
+     background: #3c6f9c;
+     border: none;
+     border-radius: 10px;
+     height: 7vh;
+     width: 89vw;
+     font-family: 'Impact';
+     color: white;
+     font-size: 1em;
+     padding: 0 30vw;
+     margin-bottom: 2vh;
+}
+.titulo{
      text-align: center;
-     padding: 2vh 2vw;
-     margin: 20vh 10vw 0 10vw;
-}
-span{
+     margin-bottom: 5vh;
      font-size: 2em;
+}
+button{
+     border: none;
+     background: #3c6f9c;
+     font-family: 'Impact';
+     color: white;
+     font-size: 2em;
+     border-radius: 10px;
+     height: 15vh;
+     display: block;
+     width: 60vw;
+     margin: 0 auto;
+}
+label{
+    margin: 0vh 3vw;
 }
